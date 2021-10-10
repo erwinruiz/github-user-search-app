@@ -9,7 +9,7 @@
   justify-content: center;
   justify-content: space-between;
   padding: 0 1rem 0 1.6rem;
-  box-shadow: 0 2.1rem 3rem rgba(70, 96, 187, 0.2);
+  box-shadow: 0 2.1rem 3rem var(--box-shadow);
 }
 .container img {
   height: 2rem;
@@ -30,7 +30,7 @@
 }
 .container button {
   background-color: var(--light-one);
-  color: #ffffff;
+  color: var(--white);
   font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 1.4rem;
@@ -41,5 +41,5 @@
 }
 .container button:hover {
   cursor: pointer;
-  background-color: #60abff;
+  background-color: var(--button-hover);
 }

@@ -14,6 +14,11 @@
   --dark-two: #ffffff;
   --dark-three: #141d2f;
   --dark-four: #1e2a47;
+
+  /* Extras */
+  --box-shadow: rgba(70, 96, 187, 0.2);
+  --button-hover: #60abff;
+  --white: #ffffff;
 }
 
 html {
