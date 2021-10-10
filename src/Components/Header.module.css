@@ -1,0 +1,21 @@
+.header {
+  max-width: 32.7rem;
+  margin: 3.1rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  color: var(--light-four);
+}
+.theme-mode {
+  display: flex;
+  align-items: center;
+  column-gap: 1.8rem;
+}
+.theme-mode h4 {
+  text-transform: uppercase;
+  color: var(--light-three);
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+}
