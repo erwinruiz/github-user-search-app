@@ -1,9 +1,8 @@
 .header {
-  max-width: 32.7rem;
-  margin: 3.1rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 3.1rem 2.4rem 3.6rem;
 }
 .header h1 {
   color: var(--light-four);
@@ -18,4 +17,11 @@
   color: var(--light-three);
   font-weight: 700;
   letter-spacing: 0.25rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .header {
+    margin: 14rem 7.85rem 3.6rem;
+  }
 }

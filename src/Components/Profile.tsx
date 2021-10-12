@@ -5,7 +5,7 @@ function Profile() {
     <main className={classes.container}>
       <div className={classes["user-data"]}>
         <img src="./assets/icon-company.svg" alt="User" />
-        <div>
+        <div className={classes.info}>
           <h3>The Octocat</h3>
           <p className={classes.username}>@octocat</p>
           <p className={classes["date-joined"]}>Joined 25 Jan 2011</p>

@@ -38,6 +38,8 @@ body {
   font-weight: 400;
   line-height: 2.5rem;
   background-color: var(--light-five);
+  max-width: 73rem;
+  margin: 0 auto;
 }
 
 /* Globals */

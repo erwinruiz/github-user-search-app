@@ -1,15 +1,12 @@
 .container {
-  max-width: 32.7rem;
-  margin: 0.5rem auto 2.1rem;
   background-color: var(--light-six);
   border-radius: 1.5rem;
   height: 6rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  justify-content: space-between;
   padding: 0 1rem 0 1.6rem;
   box-shadow: 0 2.1rem 3rem var(--box-shadow);
+  margin: 0 2.4rem 2.1rem;
 }
 .container img {
   height: 2rem;
@@ -24,6 +21,8 @@
   width: 18.6rem;
   height: 2.5rem;
   color: #222731;
+  flex: 1;
+  margin-left: 0.9rem;
 }
 .container input::placeholder {
   color: var(--light-three);
@@ -42,4 +41,25 @@
 .container button:hover {
   cursor: pointer;
   background-color: var(--button-hover);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    height: 6.9rem;
+    padding: 0 1rem 0 3.2rem;
+    margin: 0 7.85rem 2.1rem;
+  }
+  .container img {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+  .container input {
+    font-size: 1.8rem;
+    margin-left: 2.4rem;
+  }
+  .container button {
+    height: 5rem;
+    width: 10.6rem;
+  }
 }
