@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--light-six);
+  background-color: var(--container-bg-color);
   border-radius: 1.5rem;
   height: 6rem;
   display: flex;
@@ -13,6 +13,7 @@
   width: 2rem;
 }
 .container input {
+  background-color: var(--container-bg-color);
   border: none;
   outline: none;
   font-family: "Space Mono", monospace;
@@ -20,15 +21,15 @@
   font-size: 1.3rem;
   width: 18.6rem;
   height: 2.5rem;
-  color: #222731;
+  color: var(--input-text-color);
   flex: 1;
   margin-left: 0.9rem;
 }
 .container input::placeholder {
-  color: var(--light-three);
+  color: var(--text-color);
 }
 .container button {
-  background-color: var(--light-one);
+  background-color: var(--primary-color);
   color: var(--white);
   font-family: "Space Mono", monospace;
   font-weight: 700;

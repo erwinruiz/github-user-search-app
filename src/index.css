@@ -1,24 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
 :root {
-  /* LIGHT MODE COLORS */
-  --light-one: #0079ff;
-  --light-two: #697c9a;
-  --light-three: #4b6a9b;
-  --light-four: #2b3442;
-  --light-five: #f6f8ff;
-  --light-six: #fefefe;
-
-  /* DARK MODE COLORS */
-  --dark-one: #0079ff;
-  --dark-two: #ffffff;
-  --dark-three: #141d2f;
-  --dark-four: #1e2a47;
-
-  /* Extras */
+  --primary-color: #0079ff;
+  --text-color: #4b6a9b;
+  --background-color: #f6f8ff;
+  --container-bg-color: #fefefe;
+  --header-text-color: #222731;
+  --input-text-color: #222731;
+  --theme-mode-hover-color: #222731;
+  --date-joined: #697c9a;
+  --user-name-color: #2b3442;
+  --stats: #2b3442;
   --box-shadow: rgba(70, 96, 187, 0.2);
   --button-hover: #60abff;
   --white: #ffffff;
+  --link-icon-color: none;
+}
+
+[theme-mode="dark"] {
+  --text-color: var(--white);
+  --background-color: #141d2f;
+  --container-bg-color: #1e2a47;
+  --header-text-color: var(--white);
+  --input-text-color: var(--white);
+  --theme-mode-hover-color: #90a4d4;
+  --date-joined: var(--white);
+  --user-name-color: var(--white);
+  --stats: var(--white);
+  --box-shadow: none;
+  --link-icon-color: brightness(0) invert(1);
 }
 
 html {
@@ -37,7 +47,7 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.5rem;
-  background-color: var(--light-five);
+  background-color: var(--background-color);
   max-width: 73rem;
   margin: 0 auto;
 }

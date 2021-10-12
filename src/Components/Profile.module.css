@@ -1,6 +1,6 @@
 .container {
   height: 51.7rem;
-  background-color: var(--light-six);
+  background-color: var(--container-bg-color);
   padding: 3.2rem 2.4rem;
   border-radius: 1.5rem;
   display: flex;
@@ -22,25 +22,25 @@
 }
 .user-data h3 {
   font-weight: 700;
-  color: var(--light-four);
+  color: var(--user-name-color);
 }
 .user-data .username,
 .user-data .date-joined {
   font-size: 1.3rem;
 }
 .user-data .username {
-  color: var(--light-one);
+  color: var(--primary-color);
 }
 .user-data .date-joined {
-  color: var(--light-two);
+  color: var(--date-joined);
 }
 .text-content {
   font-size: 1.3rem;
-  color: var(--light-three);
+  color: var(--text-color);
   margin-bottom: 2.3rem;
 }
 .stats {
-  background-color: var(--light-five);
+  background-color: var(--background-color);
   border-radius: 1rem;
   display: flex;
   justify-content: space-evenly;
@@ -58,12 +58,12 @@
 }
 .stats .stat .title {
   font-size: 1.1rem;
-  color: var(--light-three);
+  color: var(--text-color);
 }
 .stats .stat .total {
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--light-fours);
+  color: var(--stats);
 }
 .links {
   display: flex;
@@ -80,7 +80,7 @@
 }
 .links .link a {
   font-size: 1.3rem;
-  color: var(--light-three);
+  color: var(--text-color);
   text-decoration: none;
 }
 .links .link a:hover {
@@ -88,6 +88,9 @@
 }
 .link-not-available {
   opacity: 0.5;
+}
+.link img {
+  filter: var(--link-icon-color);
 }
 
 /* Tablet */
