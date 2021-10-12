@@ -7,6 +7,7 @@ function Header() {
       <div className={classes["theme-mode"]}>
         <h4>Dark</h4>
         <img src="./assets/icon-moon.svg" alt="moon icon" />
+        <img src="./assets/icon-moon-hover.svg" alt="moon icon" />
       </div>
     </header>
   );

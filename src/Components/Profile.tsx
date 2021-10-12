@@ -32,19 +32,19 @@ function Profile() {
       <div className={classes.links}>
         <div className={classes.link}>
           <img src="./assets/icon-location.svg" alt="Location" />
-          <p>San Francisco</p>
+          <a href="/">San Francisco</a>
         </div>
         <div className={classes.link}>
           <img src="./assets/icon-website.svg" alt="Website" />
-          <p>https://github.blog</p>
+          <a href="/">https://github.blog</a>
         </div>
         <div className={`${classes.link} ${classes["link-not-available"]}`}>
           <img src="./assets/icon-twitter.svg" alt="Twitter" />
-          <p>Not Available</p>
+          <a href="/">Not Available</a>
         </div>
         <div className={classes.link}>
           <img src="./assets/icon-company.svg" alt="Company" />
-          <p>@github</p>
+          <a href="/">@github</a>
         </div>
       </div>
     </main>
