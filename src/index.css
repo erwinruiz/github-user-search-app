@@ -1,7 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
+/* Shared colors on both theme modes */
 :root {
   --primary-color: #0079ff;
+  --button-hover: #60abff;
+  --white: #ffffff;
+}
+/* Detect if the user has light color theme, or not selected one */
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+  :root {
+    --text-color: #4b6a9b;
+    --background-color: #f6f8ff;
+    --container-bg-color: #fefefe;
+    --header-text-color: #222731;
+    --input-text-color: #222731;
+    --theme-mode-hover-color: #222731;
+    --date-joined: #697c9a;
+    --user-name-color: #2b3442;
+    --stats: #2b3442;
+    --box-shadow: rgba(70, 96, 187, 0.2);
+    --link-icon-color: none;
+  }
+}
+/* Detect if the user has dark color theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: var(--white);
+    --background-color: #141d2f;
+    --container-bg-color: #1e2a47;
+    --header-text-color: var(--white);
+    --input-text-color: var(--white);
+    --theme-mode-hover-color: #90a4d4;
+    --date-joined: var(--white);
+    --user-name-color: var(--white);
+    --stats: var(--white);
+    --box-shadow: none;
+    --link-icon-color: brightness(0) invert(1);
+  }
+}
+/* Switch to light theme by clicking the icon */
+[theme-mode="light"] {
   --text-color: #4b6a9b;
   --background-color: #f6f8ff;
   --container-bg-color: #fefefe;
@@ -12,11 +50,9 @@
   --user-name-color: #2b3442;
   --stats: #2b3442;
   --box-shadow: rgba(70, 96, 187, 0.2);
-  --button-hover: #60abff;
-  --white: #ffffff;
   --link-icon-color: none;
 }
-
+/* Switch to dark theme by clicking the icon */
 [theme-mode="dark"] {
   --text-color: var(--white);
   --background-color: #141d2f;
@@ -83,3 +119,21 @@ h4 {
 p {
   margin: 0;
 }
+
+/* BACKUP */
+/* :root {
+  --primary-color: #0079ff;
+  --button-hover: #60abff;
+  --white: #ffffff;
+  --text-color: #4b6a9b;
+  --background-color: #f6f8ff;
+  --container-bg-color: #fefefe;
+  --header-text-color: #222731;
+  --input-text-color: #222731;
+  --theme-mode-hover-color: #222731;
+  --date-joined: #697c9a;
+  --user-name-color: #2b3442;
+  --stats: #2b3442;
+  --box-shadow: rgba(70, 96, 187, 0.2);
+  --link-icon-color: none;
+} */
