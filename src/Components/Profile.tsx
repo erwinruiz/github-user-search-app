@@ -34,6 +34,9 @@ function Profile() {
           <h3>{name}</h3>
           <p className={classes.username}>@{username}</p>
           <p className={classes["date-joined"]}>Joined {joinedDate}</p>
+          <p className={classes["text-content-desktop"]}>
+            {bio || "This profile has no bio"}
+          </p>
         </div>
       </div>
       <p className={classes["text-content"]}>

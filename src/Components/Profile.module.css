@@ -1,5 +1,4 @@
 .container {
-  height: 51.7rem;
   background-color: var(--container-bg-color);
   padding: 3.2rem 2.4rem;
   border-radius: 1.5rem;
@@ -33,6 +32,9 @@
 }
 .user-data .date-joined {
   color: var(--date-joined);
+}
+.text-content-desktop {
+  display: none;
 }
 .text-content {
   font-size: 1.3rem;
@@ -99,7 +101,6 @@
   .container {
     margin: 0 7.85rem;
     padding: 4rem;
-    height: 48.1rem;
   }
   .user-data {
     height: 11.7rem;
@@ -162,22 +163,47 @@
 @media (min-width: 1024px) {
   .container {
     margin: 0;
-    padding: 4rem 4.4rem;
+    padding: 4.8rem;
+  }
+  .user-data {
+    height: initial;
+    align-items: flex-start;
+    margin-bottom: 2.1rem;
+    column-gap: 4.6rem;
   }
   .user-data .info {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 13.3rem;
   }
-  .user-data .info p:last-of-type {
+  .user-data h3 {
+    margin-bottom: 0.2rem;
+  }
+  .user-data .username {
+    margin-bottom: 2rem;
+  }
+  .user-data .info .date-joined {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     text-align: right;
+  }
+  .text-content {
+    display: none;
+  }
+  .text-content-desktop {
+    display: initial;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
   }
   .text-content,
   .stats,
   .links {
     margin-left: 16.2rem;
+  }
+  .stats {
+    margin-bottom: 3.7rem;
   }
   .links {
     column-gap: 6.5rem;
